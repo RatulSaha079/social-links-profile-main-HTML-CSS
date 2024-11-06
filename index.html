@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;      
+      color: hsl(0, 0%, 100%);      
+    }
+    .inter{
+      font-family: "Inter", sans-serif;
+    }
+    .container{
+      width: 100%;
+      height: 100vh;      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(0, 0%, 12%);
+    }
+    .card{
+      height: 60vh;
+      width: 20%;
+      background-color: hsl(0, 0%, 20%);
+      padding: 20px;
+      border-radius: 10px;      
+      text-align: center;
+      box-shadow: 2px 2px 2px rgba(244, 227, 227, 0.2);
+    }
+    .avatar img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .details{
+      margin-bottom: 20px;
+    }
+    .details h5{
+      margin-bottom: 10px;
+      color: hsl(75, 94%, 57%);
+    }       
+    .links ul li{
+      list-style: none;
+      background-color: hsl(0, 0%, 12%);
+      padding: 5px;
+      margin: 10px;
+      border-radius: 5px;      
+    }
+    .links a{
+      text-decoration: none;
+      font-size: 12px;
+    }
+    @media (max-width: 376px) {    
+      .avatar img{
+        height: 40px;
+        width: 40px;
+        margin-bottom: 10px;
+      }
+      .card{
+        height: 60vh;
+        width: 30%;
+      }
+      .details{
+        margin-bottom: 12px;
+      }
+      .details h2{
+        font-size: 18px;
+      }
+      .details h5{
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      .details p{
+        font-size: 10px;          
+      }     
+      .links ul li{
+        padding: 2px;
+        margin: 10px;
+      } 
+      .links a{
+        font-size: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">   
+      <div class="avatar">
+        <img src="./download.png" alt="">
+      </div>     
+      <div class="details">
+        <h2>Ratul Saha</h2>
+        <h5>Kolkata, India</h5>
+        <p>"Front-end developer and avid reader."</p>
+      </div>         
+      <div class="links">
+        <ul>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Frontend Mentor</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>              
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ratul Saha</a>.
+  </div>
+</body>
+</html>
